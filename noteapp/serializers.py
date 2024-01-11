@@ -1,0 +1,9 @@
+# serializers is used to convert data from database to JSON format
+from rest_framework.serializers import ModelSerializer
+from .models import Note
+class NoteSerializers(ModelSerializer):
+    class Meta:
+        model = Note
+        fields = '__all__' 
+        
+        
